@@ -33,5 +33,5 @@ Since Hebrew words may be written without diacritics (nikkudim) most of the word
 
 To use it create an instance of NikkudimSpreader class and pass the strings with diacritics and without diacritics as parameters. Then get a result of spreading using getResult() method:
     
-		NikkudimSpreader spreader = new NikkudimSpreader("רִגּוּל תַּעֲשִׂיָּתִי", "ריגול תעשייתי");
-		String realResult = spreader.getResult();
+	NikkudimSpreader spreader = new NikkudimSpreader("רִגּוּל תַּעֲשִׂיָּתִי", "ריגול תעשייתי");
+	String realResult = spreader.getResult();
