@@ -16,10 +16,8 @@ Cyrillizer transliterates Hebrew text with diacritics (nikkudim) to Cyrillic scr
 
 To use it create an instance of Cyrillizer class and pass the string you need to cyrillize as a parameter. Then get a result of cyrillization using getResult() method:
     
-    ```
 		Cyrillizer cyrillizer = new Cyrillizer("מִתְּחִלָּה עוֹבְדֵי עֲבוֹדָה זָרָה הָיוּ אֲבוֹתֵינוּ וְעַכְשָׁיו קֵרְבָנוּ הַמָּקוֹם לַעֲבֹדָתוֹ");
 		String result = cyrillizer.getResult();
-    ```
 
 
 ### NikkudimSpreader
