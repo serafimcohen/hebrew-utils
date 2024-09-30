@@ -21,7 +21,7 @@ To use it create an instance of Cyrillizer class and pass the string you need to
 
 
 ### NikkudimSpreader
-Since Hebrew words may be written without diacritics (nikkudim) most of the words can be written in two different forms. This class can "spread" diacritic symbols from the form with diacritics to the from without them two make it easily readable by beginners. For example:
+Since Hebrew words may be written without diacritics (nikkudim) most of the words can be written in two different forms. This class can "spread" diacritic symbols from the form with diacritics to the form without them two make it easily readable by beginners. For example:
 
 | Form with diacritics: | Form without diacritics: | Result: |
 | --- | --- | --- |
