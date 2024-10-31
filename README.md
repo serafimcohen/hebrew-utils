@@ -1,7 +1,7 @@
 # Hebrew Utils
 
 ## Description:
-This is a side project for a Hebrew dictionary application for Android that will be available on Google Play once it's completed. The project consists of a package called `io.github.serafimkogan.hebrewutils` containing two utilities wrapped into Java classes.
+This is a side project for a Hebrew dictionary application for Android that will be available on Google Play once it's completed. The project consists of a package called `io.github.serafimcohen.hebrewutils` containing two utilities wrapped into Java classes.
 
 ### Cyrillizer
 Cyrillizer transliterates Hebrew text with diacritics (nikkudim) to Cyrillic script. It can be used to make people who just started to learn Hebrew to understand pronunciation of Hebrew words correctly. For example: 
