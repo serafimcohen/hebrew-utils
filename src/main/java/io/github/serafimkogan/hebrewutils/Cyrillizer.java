@@ -21,10 +21,10 @@ public class Cyrillizer {
     	this.source = source;
 
         this.stringToTokenize = source
-                .replace(Symbols.Hebrew.ABBREVIATION_TWO_GERESHS, String.valueOf(Symbols.DOT))
-                .replace(Symbols.Hebrew.ABBREVIATION_TWO_APOSTROPHES, String.valueOf(Symbols.DOT))
-                .replace(Symbols.Hebrew.ABBREVIATION_QUOTATION_MARK, Symbols.DOT)
-                .replace(Symbols.Hebrew.ABBREVIATION_GERSHAYIM, Symbols.DOT);
+                .replace(Symbols.Hebrew.ABBREVIATION_TWO_GERESHS, Symbols.Hebrew.DOT)
+                .replace(Symbols.Hebrew.ABBREVIATION_TWO_APOSTROPHES, Symbols.Hebrew.DOT)
+                .replace(Symbols.Hebrew.ABBREVIATION_QUOTATION_MARK, Symbols.Hebrew.DOT)
+                .replace(Symbols.Hebrew.ABBREVIATION_GERSHAYIM, Symbols.Hebrew.DOT);
 
         this.stringToTokenize = stringToTokenize
         		.replace(Symbols.Hebrew.MAQAF, Symbols.SPACE)

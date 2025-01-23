@@ -177,11 +177,11 @@ public class NikkudimSpreader {
 	    private TokenList(String stringToTokenize, boolean separateYudsAndVavs) {
 	    	this.source = stringToTokenize;
 	        this.stringToTokenize = stringToTokenize
-	                .replace(Symbols.Hebrew.ABBREVIATION_TWO_GERESHS, String.valueOf(Symbols.DOT))
-	                .replace(Symbols.Hebrew.ABBREVIATION_TWO_APOSTROPHES, String.valueOf(Symbols.DOT))
-	                .replace(Symbols.Hebrew.ABBREVIATION_QUOTATION_MARK, Symbols.DOT)
-	                .replace(Symbols.Hebrew.ABBREVIATION_GERSHAYIM, Symbols.DOT)
-	                .replace("-", "־");
+	                .replace(Symbols.Hebrew.ABBREVIATION_TWO_GERESHS, Symbols.Hebrew.DOT)
+	                .replace(Symbols.Hebrew.ABBREVIATION_TWO_APOSTROPHES, Symbols.Hebrew.DOT)
+	                .replace(Symbols.Hebrew.ABBREVIATION_QUOTATION_MARK, Symbols.Hebrew.DOT)
+	                .replace(Symbols.Hebrew.ABBREVIATION_GERSHAYIM, Symbols.Hebrew.DOT)
+	                .replace(Symbols.HYPHEN, Symbols.Hebrew.MAQAF);
 
 	        tokenizePredefinedCombination(" ");
 	        tokenizePredefinedCombination(".");

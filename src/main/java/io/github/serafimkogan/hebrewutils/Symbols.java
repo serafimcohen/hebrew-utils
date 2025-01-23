@@ -5,9 +5,9 @@ import java.util.List;
 public class Symbols {
 	public static final char HYPHEN = '-';
 	public static final char SPACE = ' ';
-	public static final char DOT = '.';
     public static final char APOSTROPHE = '\'';
     public static final char NEXT_LINE = '\n';
+	public static final char DOT = '.';
 
     public static class RegEx {
 	    public static final String WORD_BOUNDARY = "\\b";
@@ -83,11 +83,9 @@ public class Symbols {
 	    public static final char ETNAHTA = '֑';
 	    public static final char QARNEY_PARA = '֟';
 	    public static final char TELISHA_GEDOLA = '֠';
-	    
 	    public static final char DAGESH = 'ּ';
 	    public static final char GERESH = '׳';
 	    public static final char SIN_DOT = 'ׂ';
-
 	    public static final char HOLAM = 'ֹ';
 	    public static final char UPPER_DOT_1 = 'ׄ'; 
 	    public static final char UPPER_DOT_2 = 'ֺ';
@@ -102,17 +100,17 @@ public class Symbols {
 	    public static final char TSERE = 'ֵ';
 	    public static final char PATAH = 'ַ';
 	    public static final char QUBUTS = 'ֻ';
-
 	    public static final char METEG = 'ֽ';
 	    public static final char SHIN_DOT = 'ׁ';
 	    public static final char ZAKEF_KATAN = '֔';
+	    public static final char MAQAF = '־';
 
-	    public static final char ABBREVIATION_GERSHAYIM = '״';
-	    public static final char ABBREVIATION_QUOTATION_MARK = '\"';
+		public static final String DOT = ".";
+	    public static final String ABBREVIATION_GERSHAYIM = "״";
+	    public static final String ABBREVIATION_QUOTATION_MARK = "\"";
 	    public static final String ABBREVIATION_TWO_GERESHS = "׳׳";
 	    public static final String ABBREVIATION_TWO_APOSTROPHES = "''";
 
-	    public static final char MAQAF = '־';
 	    public static final String VAV_DAGESH_VAV = "וּו";
 	    public static final String VAV_VAV = "וו";
 	    public static final String YUD_YUD = "יי";
@@ -138,7 +136,7 @@ public class Symbols {
 	        		stringBuilder.setCharAt(i, APOSTROPHE);
 	        		continue;
 	        	}
-	        	if (stringBuilder.charAt(i) == ABBREVIATION_GERSHAYIM) {
+	        	if (String.valueOf(stringBuilder.charAt(i)).equals(ABBREVIATION_GERSHAYIM)) {
 	        		stringBuilder.setCharAt(i, APOSTROPHE);
 	        		stringBuilder.insert(i + 1, APOSTROPHE);
 	        		i++;
