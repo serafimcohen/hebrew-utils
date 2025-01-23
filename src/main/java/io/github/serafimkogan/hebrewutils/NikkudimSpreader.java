@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 
@@ -173,7 +174,7 @@ public class NikkudimSpreader {
 	private static class TokenList extends ArrayList<Token> {
 		private String source;
 	    private String stringToTokenize;
-	    private HashMap<Integer, String> tokens = new HashMap<>();
+	    private Map<Integer, String> tokens = new HashMap<>();
 	    
 	    private TokenList(String stringToTokenize, boolean separateYudsAndVavs) {
 	    	this.source = stringToTokenize;
