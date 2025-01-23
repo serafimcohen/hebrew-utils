@@ -76,9 +76,10 @@ public class NikkudimSpreaderTest {
 	public void shouldSpreadNikkudimCorrectly2() {
 		String reference = "רִגּוּל תַּעֲשִׂיָּתִי";
 		String billet = "ריגול תעשייתי";
-		String expected = "ריגּוּל תַּעֲשִׂייָּתִי";
+		String expected = "ריגּוּל תַּעֲשִׂייָּתִי";
 		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
 		String actual = spreader.getResult();
+		System.out.println(spreader.toString());
 		assertEquals(expected, actual);
 	}
 

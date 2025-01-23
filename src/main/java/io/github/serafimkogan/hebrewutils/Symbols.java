@@ -1,6 +1,6 @@
 package io.github.serafimkogan.hebrewutils;
 
-import java.util.List;
+import java.util.Set;
 
 public class Symbols {
 	public static final char HYPHEN = '-';
@@ -154,7 +154,7 @@ public class Symbols {
 	        return stringBuilder.toString();
 	    }
 
-		public static boolean nikkudimContainsNonStressedO(List<Character> nikkudim) {
+		public static boolean nikkudimContainsNonStressedO(Set<Character> nikkudim) {
 			if (nikkudim.contains(Symbols.Hebrew.TSERE)
 					|| nikkudim.contains(Symbols.Hebrew.SHEVA)
 					|| nikkudim.contains(Symbols.Hebrew.HOLAM)

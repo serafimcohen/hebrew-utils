@@ -1,9 +1,10 @@
 package io.github.serafimkogan.hebrewutils;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 
 public class NikkudimSpreader {
@@ -288,7 +289,7 @@ public class NikkudimSpreader {
 	private static class Token {
         private String root;
         private String fullToken;
-        private List<Character> nikkudim = new ArrayList<>();
+        private Set<Character> nikkudim = new HashSet<>();
         private boolean isHebrewToken = false;
         
         private Token(String string) {
@@ -312,8 +313,6 @@ public class NikkudimSpreader {
             } else {
                 root = fullToken;
             }
-            
-            Collections.sort(nikkudim);
         }
         
         public String toString() {
