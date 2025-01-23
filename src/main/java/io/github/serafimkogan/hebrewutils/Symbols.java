@@ -3,126 +3,124 @@ package io.github.serafimkogan.hebrewutils;
 import java.util.List;
 
 public class Symbols {
-	public static final char hyphen = '-';
-	public static final char space = ' ';
-	public static final char dot = '.';
-    public static final char apostrophe = '\'';
-    public static final char next_line = '\n';
-    
+	public static final char HYPHEN = '-';
+	public static final char SPACE = ' ';
+	public static final char DOT = '.';
+    public static final char APOSTROPHE = '\'';
+    public static final char NEXT_LINE = '\n';
 
     public static class RegEx {
-	    public static final String word_boundary = "\\b";
+	    public static final String WORD_BOUNDARY = "\\b";
+	    public static final String ONE_OR_MORE_SPACES = " +";
     }
     
     public static class Cyrillic {
-    	public static final String a = "а";
-    	public static final String b = "б";
-    	public static final String v = "в";
-    	public static final String g = "г";
-    	public static final String d = "д";
-    	public static final String ye = "е";
-    	public static final String yo = "ё";
-    	public static final String zh = "ж";
-    	public static final String z = "з";
-    	public static final String i = "и";
-    	public static final String i_short = "й";
-    	public static final String k = "к";
-    	public static final String l = "л";
-    	public static final String m = "м";
-    	public static final String n = "н";
-    	public static final String o = "о";
-    	public static final String p = "п";
-    	public static final String r = "р";
-    	public static final String s = "с";
-    	public static final String t = "т";
-    	public static final String u = "у";
-    	public static final String f = "ф";
-    	public static final String kh = "х";
-    	public static final String h = "h";
-    	public static final String ts = "ц";
-    	public static final String ch = "ч";
-    	public static final String sh = "ш";
-    	public static final String sch = "щ";
-    	public static final String hard = "ъ";
-    	public static final String yeru = "ы";
-    	public static final String soft = "ь";
-    	public static final String e = "э";
-    	public static final String yu = "ю";
-    	public static final String ya = "я";
+    	public static final String A = "а";
+    	public static final String B = "б";
+    	public static final String V = "в";
+    	public static final String G = "г";
+    	public static final String D = "д";
+    	public static final String YE = "е";
+    	public static final String YO = "ё";
+    	public static final String ZH = "ж";
+    	public static final String Z = "з";
+    	public static final String I = "и";
+    	public static final String I_SHORT = "й";
+    	public static final String K = "к";
+    	public static final String L = "л";
+    	public static final String M = "м";
+    	public static final String N = "н";
+    	public static final String O = "о";
+    	public static final String P = "п";
+    	public static final String R = "р";
+    	public static final String S = "с";
+    	public static final String T = "т";
+    	public static final String U = "у";
+    	public static final String F = "ф";
+    	public static final String KH = "х";
+    	public static final String H = "h";
+    	public static final String TS = "ц";
+    	public static final String CH = "ч";
+    	public static final String SH = "ш";
+    	public static final String SCH = "щ";
+    	public static final String HARD = "ъ";
+    	public static final String YERU = "ы";
+    	public static final String SOFT = "ь";
+    	public static final String E = "э";
+    	public static final String YU = "ю";
+    	public static final String YA = "я";
     }
 	
 	public static class Hebrew {
-		public static final String alef = "א";
-		public static final String bet = "ב";
-		public static final String gimel = "ג";
-		public static final String dalet = "ד";
-		public static final String hay = "ה";
-		public static final String vav = "ו";
-		public static final String zayin = "ז";
-		public static final String khet = "ח";
-		public static final String tet = "ט";
-		public static final String yud = "י";
-		public static final String kaf = "כ";
-		public static final String kaf_sofit = "ך";
-		public static final String lamed = "ל";
-		public static final String mem = "מ";
-		public static final String mem_sofit = "ם";
-		public static final String nun = "נ";
-		public static final String nun_sofit = "ן";
-		public static final String sameh = "ס";
-		public static final String ain = "ע";
-		public static final String pey = "פ";
-		public static final String pey_sofit = "ף";
-		public static final String tsadi = "צ";
-		public static final String tsadi_sofit = "ץ";
-		public static final String kuf = "ק";
-		public static final String resh = "ר";
-		public static final String shin = "ש";
-		public static final String tav = "ת";
+		public static final String ALEF = "א";
+		public static final String BET = "ב";
+		public static final String GIMEL = "ג";
+		public static final String DALET = "ד";
+		public static final String HAY = "ה";
+		public static final String VAV = "ו";
+		public static final String ZAYIN = "ז";
+		public static final String KHET = "ח";
+		public static final String TET = "ט";
+		public static final String YUD = "י";
+		public static final String KAF = "כ";
+		public static final String KAF_SOFIT = "ך";
+		public static final String LAMED = "ל";
+		public static final String MEM = "מ";
+		public static final String MEM_SOFIT = "ם";
+		public static final String NUN = "נ";
+		public static final String NUN_SOFIT = "ן";
+		public static final String SAMEH = "ס";
+		public static final String AIN = "ע";
+		public static final String PEY = "פ";
+		public static final String PEY_SOFIT = "ף";
+		public static final String TSADI = "צ";
+		public static final String TSADI_SOFIT = "ץ";
+		public static final String KUF = "ק";
+		public static final String RESH = "ר";
+		public static final String SHIN = "ש";
+		public static final String TAV = "ת";
 		
-		
-		
-	    public static final char etnahta = '֑';
-	    public static final char qarney_para = '֟';
-	    public static final char telisha_gedola = '֠';
+	    public static final char ETNAHTA = '֑';
+	    public static final char QARNEY_PARA = '֟';
+	    public static final char TELISHA_GEDOLA = '֠';
 	    
-	    public static final char dagesh = 'ּ';
-	    public static final char geresh = '׳';
-	    public static final char sin_dot = 'ׂ';
+	    public static final char DAGESH = 'ּ';
+	    public static final char GERESH = '׳';
+	    public static final char SIN_DOT = 'ׂ';
 
-	    public static final char holam = 'ֹ';
-	    public static final char upper_dot_1 = 'ׄ'; 
-	    public static final char upper_dot_2 = 'ֺ';
-	    public static final char qamats = 'ָ';
-	    public static final char segol = 'ֶ';
-	    public static final char qamats_katan = 'ׇ';
-	    public static final char hiriq = 'ִ';
-	    public static final char sheva = 'ְ';
-	    public static final char hataf_segol = 'ֱ';
-	    public static final char hataf_patah = 'ֲ';
-	    public static final char hataf_qamats = 'ֳ';
-	    public static final char tsere = 'ֵ';
-	    public static final char patah = 'ַ';
-	    public static final char qubuts = 'ֻ';
+	    public static final char HOLAM = 'ֹ';
+	    public static final char UPPER_DOT_1 = 'ׄ'; 
+	    public static final char UPPER_DOT_2 = 'ֺ';
+	    public static final char QAMATS = 'ָ';
+	    public static final char SEGOL = 'ֶ';
+	    public static final char QAMATS_KATAN = 'ׇ';
+	    public static final char HIRIQ = 'ִ';
+	    public static final char SHEVA = 'ְ';
+	    public static final char HATAF_SEGOL = 'ֱ';
+	    public static final char HATAF_PATAH = 'ֲ';
+	    public static final char HATAF_QAMATS = 'ֳ';
+	    public static final char TSERE = 'ֵ';
+	    public static final char PATAH = 'ַ';
+	    public static final char QUBUTS = 'ֻ';
 
-	    public static final char meteg = 'ֽ';
-	    public static final char shin_dot = 'ׁ';
-	    public static final char zakef_katan = '֔';
+	    public static final char METEG = 'ֽ';
+	    public static final char SHIN_DOT = 'ׁ';
+	    public static final char ZAKEF_KATAN = '֔';
 
-	    public static final char abbreviation_gershayim = '״';
-	    public static final char abbreviation_quotation_mark = '\"';
-	    public static final String abbreviation_two_gereshs = "׳׳";
-	    public static final String abbreviation_two_apostrophes = "''";
+	    public static final char ABBREVIATION_GERSHAYIM = '״';
+	    public static final char ABBREVIATION_QUOTATION_MARK = '\"';
+	    public static final String ABBREVIATION_TWO_GERESHS = "׳׳";
+	    public static final String ABBREVIATION_TWO_APOSTROPHES = "''";
 
-	    public static final char maqaf = '־';
-	    public static final String vav_dagesh_vav = "וּו";
-	    public static final String vav_vav = "וו";
-	    public static final String yud_yud = "יי";
-	    public static final String yud_vav = "יו";
+	    public static final char MAQAF = '־';
+	    public static final String VAV_DAGESH_VAV = "וּו";
+	    public static final String VAV_VAV = "וו";
+	    public static final String YUD_YUD = "יי";
+	    public static final String YUD_VAV = "יו";
 	    
 		public static boolean isHebrewDiacritics(char c) {
-	    	return (c >= etnahta && c <= qarney_para
-	    			|| c >= telisha_gedola && c <= qamats_katan)
+	    	return (c >= ETNAHTA && c <= QARNEY_PARA
+	    			|| c >= TELISHA_GEDOLA && c <= QAMATS_KATAN)
 	    			&& c != '־';
 		}
 		
@@ -136,19 +134,19 @@ public class Symbols {
 	        stringBuilder.append(string);
 	        
 	        for (int i = 0; i < stringBuilder.length(); i++) {
-	        	if (stringBuilder.charAt(i) == geresh) {
-	        		stringBuilder.setCharAt(i, apostrophe);
+	        	if (stringBuilder.charAt(i) == GERESH) {
+	        		stringBuilder.setCharAt(i, APOSTROPHE);
 	        		continue;
 	        	}
-	        	if (stringBuilder.charAt(i) == abbreviation_gershayim) {
-	        		stringBuilder.setCharAt(i, apostrophe);
-	        		stringBuilder.insert(i + 1, apostrophe);
+	        	if (stringBuilder.charAt(i) == ABBREVIATION_GERSHAYIM) {
+	        		stringBuilder.setCharAt(i, APOSTROPHE);
+	        		stringBuilder.insert(i + 1, APOSTROPHE);
 	        		i++;
 	        		continue;
 	        	}
-	        	if ((stringBuilder.charAt(i) >= etnahta && stringBuilder.charAt(i) <= qarney_para
-	        			|| stringBuilder.charAt(i) >= telisha_gedola && stringBuilder.charAt(i) <= qamats_katan)
-	        			&& stringBuilder.charAt(i) != maqaf) {
+	        	if ((stringBuilder.charAt(i) >= ETNAHTA && stringBuilder.charAt(i) <= QARNEY_PARA
+	        			|| stringBuilder.charAt(i) >= TELISHA_GEDOLA && stringBuilder.charAt(i) <= QAMATS_KATAN)
+	        			&& stringBuilder.charAt(i) != MAQAF) {
 	        		stringBuilder.deleteCharAt(i);
 	        		i--;
 	        		continue;
@@ -157,21 +155,21 @@ public class Symbols {
 
 	        return stringBuilder.toString();
 	    }
-		
+
 		public static boolean nikkudimContainsNonStressedO(List<Character> nikkudim) {
-			if (nikkudim.contains(Symbols.Hebrew.tsere)
-					|| nikkudim.contains(Symbols.Hebrew.sheva)
-					|| nikkudim.contains(Symbols.Hebrew.holam)
-                    || nikkudim.contains(Symbols.Hebrew.upper_dot_1)
-                    || nikkudim.contains(Symbols.Hebrew.upper_dot_2)
-                    || nikkudim.contains(Symbols.Hebrew.qamats_katan)
-                    || nikkudim.contains(Symbols.Hebrew.hataf_qamats)
-                    || nikkudim.contains(Symbols.Hebrew.qubuts)
-                    || nikkudim.contains(Symbols.Hebrew.qamats)
-                    || nikkudim.contains(Symbols.Hebrew.hataf_patah)
-                    || nikkudim.contains(Symbols.Hebrew.patah)
-                    || nikkudim.contains(Symbols.Hebrew.segol)
-                    || nikkudim.contains(Symbols.Hebrew.hataf_segol))
+			if (nikkudim.contains(Symbols.Hebrew.TSERE)
+					|| nikkudim.contains(Symbols.Hebrew.SHEVA)
+					|| nikkudim.contains(Symbols.Hebrew.HOLAM)
+                    || nikkudim.contains(Symbols.Hebrew.UPPER_DOT_1)
+                    || nikkudim.contains(Symbols.Hebrew.UPPER_DOT_2)
+                    || nikkudim.contains(Symbols.Hebrew.QAMATS_KATAN)
+                    || nikkudim.contains(Symbols.Hebrew.HATAF_QAMATS)
+                    || nikkudim.contains(Symbols.Hebrew.QUBUTS)
+                    || nikkudim.contains(Symbols.Hebrew.QAMATS)
+                    || nikkudim.contains(Symbols.Hebrew.HATAF_PATAH)
+                    || nikkudim.contains(Symbols.Hebrew.PATAH)
+                    || nikkudim.contains(Symbols.Hebrew.SEGOL)
+                    || nikkudim.contains(Symbols.Hebrew.HATAF_SEGOL))
 				return true;
 			return false;
 		}

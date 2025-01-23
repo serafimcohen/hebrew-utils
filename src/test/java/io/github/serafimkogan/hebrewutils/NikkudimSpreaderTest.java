@@ -10,7 +10,6 @@ public class NikkudimSpreaderTest {
     public void shouldThrowNullPointerException1() {
 		String reference = null;
 		String billet = "תאווה";
-		
 		assertThrows(NullPointerException.class, () -> new NikkudimSpreader(reference, billet));
     }
 
@@ -18,7 +17,6 @@ public class NikkudimSpreaderTest {
     public void shouldThrowNullPointerException2() {
 		String reference = "טַיֶּסֶתָהּ";
 		String billet = null;
-		
 		assertThrows(NullPointerException.class, () -> new NikkudimSpreader(reference, billet));
     }
     
@@ -26,7 +24,6 @@ public class NikkudimSpreaderTest {
     public void shouldThrowNullPointerException3() {
 		String reference = null;
 		String billet = null;
-		
 		assertThrows(NullPointerException.class, () -> new NikkudimSpreader(reference, billet));
     }
 	
@@ -34,7 +31,6 @@ public class NikkudimSpreaderTest {
     public void shouldThrowIllegalArgumentException1() {
 		String reference = "טַיֶּסֶתָהּ";
 		String billet = "תאווה";
-		
 		assertThrows(IllegalArgumentException.class, () -> new NikkudimSpreader(reference, billet));
     }
     
@@ -42,7 +38,6 @@ public class NikkudimSpreaderTest {
     public void shouldThrowIllegalArgumentException2() {
 		String reference = "רֵאַת";
 		String billet = "שימור";
-		
 		assertThrows(IllegalArgumentException.class, () -> new NikkudimSpreader(reference, billet));
     }
     
@@ -50,7 +45,6 @@ public class NikkudimSpreaderTest {
     public void shouldThrowIllegalArgumentException3() {
 		String reference = "קְנִיָּה";
 		String billet = "צוותי";
-		
 		assertThrows(IllegalArgumentException.class, () -> new NikkudimSpreader(reference, billet));
     }
     
@@ -58,7 +52,6 @@ public class NikkudimSpreaderTest {
     public void shouldThrowIllegalArgumentException4() {
 		String reference = "עֲשֶׂרֶת הַדִּבְּרוֹת";
 		String billet = "עקידה";
-		
 		assertThrows(IllegalArgumentException.class, () -> new NikkudimSpreader(reference, billet));
     }
     
@@ -66,190 +59,127 @@ public class NikkudimSpreaderTest {
     public void shouldThrowIllegalArgumentException5() {
 		String reference = "עֹרְבִים";
 		String billet = "סכמות";
-		
 		assertThrows(IllegalArgumentException.class, () -> new NikkudimSpreader(reference, billet));
     }
 	
 	@Test
-	public void shouldBeTrue1() {
+	public void shouldSpreadNikkudimCorrectly1() {
 		String reference = "טַיֶּסֶתָהּ";
 		String billet = "טייסתה";
-		String expectedResult = "טַייֶּסֶתָהּ";
+		String expected = "טַייֶּסֶתָהּ";
 		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
+		String actual = spreader.getResult();
+		assertEquals(expected, actual);
+	}
 
 	@Test
-	public void shouldBeTrue2() {
-		String reference = "טַיֶּסֶתָן";
-		String billet = "טייסתן";
-		String expectedResult = "טַייֶּסֶתָן";
-		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
-
-	@Test
-	public void shouldBeTrue3() {
+	public void shouldSpreadNikkudimCorrectly2() {
 		String reference = "רִגּוּל תַּעֲשִׂיָּתִי";
 		String billet = "ריגול תעשייתי";
-		String expectedResult = "ריגּוּל תַּעֲשִׂייָּתִי";
+		String expected = "ריגּוּל תַּעֲשִׂייָּתִי";
 		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
+		String actual = spreader.getResult();
+		assertEquals(expected, actual);
+	}
 
 	@Test
-	public void shouldBeTrue4() {
+	public void shouldSpreadNikkudimCorrectly3() {
 		String reference = "שַׁמְרָנַי";
 		String billet = "שמרניי";
-		String expectedResult = "שַׁמְרָנַיי";
+		String expected = "שַׁמְרָנַיי";
 		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
+		String actual = spreader.getResult();
+		assertEquals(expected, actual);
+	}
 
 	@Test
-	public void shouldBeTrue5() {
-		String reference = "אֲבוֹתַי";
-		String billet = "אבותיי";
-		String expectedResult = "אֲבוֹתַיי";
-		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
-
-	@Test
-	public void shouldBeTrue6() {
+	public void shouldSpreadNikkudimCorrectly4() {
 		String reference = "אָזְנֵי";
 		String billet = "אוזני";
-		String expectedResult = "אוֹזְנֵי";
+		String expected = "אוֹזְנֵי";
 		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
+		String actual = spreader.getResult();
+		assertEquals(expected, actual);
+	}
 
 	@Test
-	public void shouldBeTrue7() {
-		String reference = "אֵיבוֹתַי";
-		String billet = "איבותיי";
-		String expectedResult = "אֵיבוֹתַיי";
-		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
-
-	@Test
-	public void shouldBeTrue8() {
+	public void shouldSpreadNikkudimCorrectly5() {
 		String reference = "תִּסְמֹנֶת הָאַף הַלָּבָן";
 		String billet = "תסמונת האף הלבן";
-		String expectedResult = "תִּסְמוֹנֶת הָאַף הַלָּבָן";
+		String expected = "תִּסְמוֹנֶת הָאַף הַלָּבָן";
 		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
+		String actual = spreader.getResult();
+		assertEquals(expected, actual);
+	}
 
 	@Test
-	public void shouldBeTrue9() {
-		String reference = "בִּכּוּרַיִךְ";
-		String billet = "בכורייך";
-		String expectedResult = "בִּכּוּרַייִךְ";
-		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
-
-	@Test
-	public void shouldBeTrue10() {
-		String reference = "גְּבִינוֹתַי";
-		String billet = "גבינותיי";
-		String expectedResult = "גְּבִינוֹתַיי";
-		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
-
-
-	@Test
-	public void shouldBeTrue11() {
+	public void shouldSpreadNikkudimCorrectly6() {
 		String reference = "אֲסֵפַתְכֶם";
 		String billet = "אסיפתכם";
-		String expectedResult = "אֲסיפַתְכֶם";
+		String expected = "אֲסיפַתְכֶם";
 		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
+		String actual = spreader.getResult();
+		assertEquals(expected, actual);
+	}
 	
 	@Test
-	public void shouldBeTrue12() {
+	public void shouldSpreadNikkudimCorrectly7() {
 		String reference = "אַוָּזֵי";
 		String billet = "אווזי";
-		String expectedResult = "אַווָּזֵי";
+		String expected = "אַווָּזֵי";
 		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
+		String actual = spreader.getResult();
+		assertEquals(expected, actual);
+	}
 
 	@Test
-	public void shouldBeTrue13() {
+	public void shouldSpreadNikkudimCorrectly8() {
 		String reference = "אֲוִירוֹת";
 		String billet = "אווירות";
-		String expectedResult = "אֲווִירוֹת";
+		String expected = "אֲווִירוֹת";
 		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
+		String actual = spreader.getResult();
+		assertEquals(expected, actual);
+	}
 
 	@Test
-	public void shouldBeTrue14() {
+	public void shouldSpreadNikkudimCorrectly9() {
 		String reference = "הִתְיַקְּרֻיּוֹת";
 		String billet = "התייקרויות";
-		String expectedResult = "הִתְייַקְּרוֹיּוֹת";
+		String expected = "הִתְייַקְּרוֹיּוֹת";
 		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
+		String actual = spreader.getResult();
+		assertEquals(expected, actual);
+	}
 
 
 	@Test
-	public void shouldBeTrue15() {
+	public void shouldSpreadNikkudimCorrectly10() {
 		String reference = "זָוִיּוֹת";
 		String billet = "זוויות";
-		String expectedResult = "זָווִיּוֹת";
+		String expected = "זָווִיּוֹת";
 		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
+		String actual = spreader.getResult();
+		assertEquals(expected, actual);
+	}
 
 	@Test
-	public void shouldBeTrue16() {
+	public void shouldSpreadNikkudimCorrectly11() {
 		String reference = "חִוּוּט";
 		String billet = "חיווט";
-		String expectedResult = "חִיווּט";
+		String expected = "חִיווּט";
 		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
+		String actual = spreader.getResult();
+		assertEquals(expected, actual);
+	}
 
 	@Test
-	public void shouldBeTrue17() {
-		String reference = "סְתָו";
-		String billet = "סתיו";
-		String expectedResult = "סְתָיו";
-		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
-
-
-	@Test
-	public void shouldBeTrue18() {
+	public void shouldSpreadNikkudimCorrectly12() {
 		String reference = "סִיֹּמֶת";
 		String billet = "סיומת";
-		String expectedResult = "סִיוֹמֶת";
+		String expected = "סִיוֹמֶת";
 		NikkudimSpreader spreader = new NikkudimSpreader(reference, billet);
-		String realResult = spreader.getResult();
-		assertEquals(expectedResult, realResult);
-	};
+		String actual = spreader.getResult();
+		assertEquals(expected, actual);
+	}
 }
