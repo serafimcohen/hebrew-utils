@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+
 public class NikkudimSpreader {
 	private static final String ILLEGAL_ARGUMENT_EXCEPTION_MESSAGE = "Unable to spread diacritics from given source, most likely completely different words have been provided";
 	private static final String REFERENCE_NULL_POINTER_EXCEPTION_MESSAGE = "Reference shouldn't be null";

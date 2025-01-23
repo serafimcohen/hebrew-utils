@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
+
 
 public class NikkudimSpreader {
 	private static final String ILLEGAL_ARGUMENT_EXCEPTION_MESSAGE = "Unable to spread diacritics from given source, most likely completely different words have been provided";
@@ -173,7 +173,7 @@ public class NikkudimSpreader {
 	private static class TokenList extends ArrayList<Token> {
 		private String source;
 	    private String stringToTokenize;
-	    private Map<Integer, String> tokens = new HashMap<>();
+	    private HashMap<Integer, String> tokens = new HashMap<>();
 	    
 	    private TokenList(String stringToTokenize, boolean separateYudsAndVavs) {
 	    	this.source = stringToTokenize;
