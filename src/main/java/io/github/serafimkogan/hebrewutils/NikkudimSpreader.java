@@ -4,15 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-<<<<<<< HEAD
 import java.util.Map;
 import java.util.Set;
-||||||| cafd458
-
-=======
-import java.util.Set;
-
->>>>>>> 92819465928b8bb7e8262275166b247eb27233ae
 
 public class NikkudimSpreader {
 	private static final String ILLEGAL_ARGUMENT_EXCEPTION_MESSAGE = "Unable to spread diacritics from given source, most likely completely different words have been provided";
